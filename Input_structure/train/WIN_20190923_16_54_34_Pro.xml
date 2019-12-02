@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>WIN_20190923_16_54_34_Pro.jpg</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/WIN_20190923_16_54_34_Pro.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>1280</width>
+        <height>720</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>596.6488413547237</xmin>
+        <ymin>240.26148969889064</ymin>
+        <xmax>767.7718360071301</xmax>
+        <ymax>404.5721077654516</ymax>
+    </bndbox>
+</object>
+</annotation>

@@ -1,0 +1,37 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>IMG_6449.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/IMG_6449.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4000</width>
+        <height>3000</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2903.2258064516127</xmin>
+        <ymin>870.9677419354839</ymin>
+        <xmax>3758.064516129032</xmax>
+        <ymax>1701.6129032258063</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3637.0967741935483</xmin>
+        <ymin>842.741935483871</ymin>
+        <xmax>4000</xmax>
+        <ymax>1612.9032258064517</ymax>
+    </bndbox>
+</object>
+</annotation>

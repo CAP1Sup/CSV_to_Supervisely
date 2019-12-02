@@ -1,0 +1,59 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>DSC00347.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/DSC00347.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4912</width>
+        <height>3264</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1869.7533482142858</xmin>
+        <ymin>469.41935483870964</ymin>
+        <xmax>2207.453348214286</xmax>
+        <ymax>552.7741935483871</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1786.4247767857144</xmin>
+        <ymin>649.2903225806451</ymin>
+        <xmax>2203.0676339285715</xmax>
+        <ymax>706.3225806451612</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2339.0247767857145</xmin>
+        <ymin>943.2258064516128</ymin>
+        <xmax>2781.9819196428575</xmax>
+        <ymax>1202.0645161290322</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2378.496205357143</xmin>
+        <ymin>1789.9354838709676</ymin>
+        <xmax>2803.9104910714286</xmax>
+        <ymax>2018.0645161290322</ymax>
+    </bndbox>
+</object>
+</annotation>

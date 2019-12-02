@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>Photo%20on%2010-22-19%20at%203.32%20PM.jpg</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/Photo%20on%2010-22-19%20at%203.32%20PM.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>640</width>
+        <height>426</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>413.2379248658318</xmin>
+        <ymin>300.03225806451616</ymin>
+        <xmax>521.4311270125223</xmax>
+        <ymax>356.7177419354839</ymax>
+    </bndbox>
+</object>
+</annotation>

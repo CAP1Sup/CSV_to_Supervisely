@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>WIN_20190923_16_51_42_Pro.jpg</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/WIN_20190923_16_51_42_Pro.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>1280</width>
+        <height>720</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>594.367201426025</xmin>
+        <ymin>137.56735340729003</ymin>
+        <xmax>828.2352941176471</xmax>
+        <ymax>568.8827258320127</ymax>
+    </bndbox>
+</object>
+</annotation>

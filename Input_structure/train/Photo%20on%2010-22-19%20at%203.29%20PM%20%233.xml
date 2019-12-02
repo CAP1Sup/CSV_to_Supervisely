@@ -1,0 +1,48 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>Photo%20on%2010-22-19%20at%203.29%20PM%20%233.jpg</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/Photo%20on%2010-22-19%20at%203.29%20PM%20%233.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>640</width>
+        <height>426</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>367.44186046511624</xmin>
+        <ymin>206.12903225806454</ymin>
+        <xmax>468.19320214669045</xmax>
+        <ymax>364.16129032258067</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>248.94454382826476</xmin>
+        <ymin>229.60483870967744</ymin>
+        <xmax>258.175313059034</xmax>
+        <ymax>309.7661290322581</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>278.71198568872984</xmin>
+        <ymin>318.35483870967744</ymin>
+        <xmax>297.602862254025</xmax>
+        <ymax>426</ymax>
+    </bndbox>
+</object>
+</annotation>

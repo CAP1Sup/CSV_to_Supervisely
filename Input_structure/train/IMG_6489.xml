@@ -1,0 +1,81 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>IMG_6489.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/IMG_6489.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4000</width>
+        <height>3000</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1116.9354838709678</xmin>
+        <ymin>0</ymin>
+        <xmax>1286.2903225806451</xmax>
+        <ymax>56.45161290322581</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2040.3225806451612</xmin>
+        <ymin>0</ymin>
+        <xmax>2217.7419354838707</xmax>
+        <ymax>68.54838709677419</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2741.935483870968</xmin>
+        <ymin>0</ymin>
+        <xmax>2919.3548387096776</xmax>
+        <ymax>80.64516129032258</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3681.451612903226</xmin>
+        <ymin>0</ymin>
+        <xmax>3866.935483870968</xmax>
+        <ymax>96.7741935483871</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1314.516129032258</xmin>
+        <ymin>165.32258064516128</ymin>
+        <xmax>2161.290322580645</xmax>
+        <ymax>1012.0967741935483</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2665.3225806451615</xmin>
+        <ymin>185.48387096774192</ymin>
+        <xmax>3520.161290322581</xmax>
+        <ymax>1040.3225806451612</ymax>
+    </bndbox>
+</object>
+</annotation>

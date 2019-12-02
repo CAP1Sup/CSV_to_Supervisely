@@ -1,0 +1,49 @@
+# Christian Piper
+# 12/1/19
+# This program will prompt the user for the beginning and end directories, then convert from a .csv format to a Supervisely format
+
+import os
+import shutil
+
+def main():
+    print("")
+    input_path = getInputPath()
+
+def getInputPath():
+    input_path = input("Enter the full path to the directory of your input data: ")
+    
+    if os.path.exists(input_path):
+        return input_path
+    
+    else:
+        AttributeError
+
+def createFolderStructure(input_path, output_path, project_name):
+
+    # Check to see if output directory exists, otherwise error
+    if os.path.exists(output_path)
+        os.chdir(output_path)
+
+    else:
+        AttributeError
+    
+    # Create the project name folder and move into it
+    os.mkdir(project_name)
+    os.chdir(project_name)
+
+    # Create the dataset folder and move into it
+    os.mkdir('main_dataset')
+    os.chdir('main_dataset')
+
+    # Create the folders for annotations and images
+    os.mkdir('ann')
+    os.mkdir('img')
+
+    # Get all the image names in the input images directory
+    input_image_names = [f for f in os.listdir(input_path) if os.path.isfile(os.path.join(input_path, f))]
+
+    # Copy each image over to the output images folder
+    for entry in input_image_names:
+        shutil.copy(entry, output_path + project_name + "main_dataset/img")
+
+main()

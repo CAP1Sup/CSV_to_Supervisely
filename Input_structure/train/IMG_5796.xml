@@ -1,0 +1,70 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>IMG_5796.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/IMG_5796.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4000</width>
+        <height>3000</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1125.8533834653156</xmin>
+        <ymin>2319.6565290917497</ymin>
+        <xmax>1265.1470298663146</xmax>
+        <ymax>2446.9722442996417</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>700.0128168284514</xmin>
+        <ymin>2267.9345544256253</ymin>
+        <xmax>831.3468357955835</xmax>
+        <ymax>2387.292940449195</ymax>
+    </bndbox>
+</object><object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1523.8354203919732</xmin>
+        <ymin>2299.7634278082674</ymin>
+        <xmax>1663.1290667929723</xmax>
+        <ymax>2494.715554373605</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>190.59599582765668</xmin>
+        <ymin>2892.576915011279</ymin>
+        <xmax>489.0824126504314</xmax>
+        <ymax>3000.0000000000005</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>0</xmin>
+        <ymin>2840.854940345155</ymin>
+        <xmax>294.0712633401453</xmax>
+        <ymax>3000</ymax>
+    </bndbox>
+</object>
+</annotation>

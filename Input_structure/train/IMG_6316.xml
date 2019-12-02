@@ -1,0 +1,92 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>IMG_6316.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/IMG_6316.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4000</width>
+        <height>3000</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2282.258064516129</xmin>
+        <ymin>1661.2903225806451</ymin>
+        <xmax>2556.4516129032254</xmax>
+        <ymax>2145.1612903225805</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1955.6451612903227</xmin>
+        <ymin>1532.258064516129</ymin>
+        <xmax>2604.8387096774195</xmax>
+        <ymax>2411.290322580645</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3004.032258064516</xmin>
+        <ymin>1411.2903225806451</ymin>
+        <xmax>3133.064516129032</xmax>
+        <ymax>1826.6129032258063</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2657.258064516129</xmin>
+        <ymin>1177.4193548387098</ymin>
+        <xmax>3189.5161290322576</xmax>
+        <ymax>1927.4193548387098</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3399.1935483870966</xmin>
+        <ymin>1217.741935483871</ymin>
+        <xmax>3608.870967741935</xmax>
+        <ymax>1596.774193548387</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3798.3870967741937</xmin>
+        <ymin>1060.483870967742</ymin>
+        <xmax>3923.3870967741937</xmax>
+        <ymax>1395.1612903225807</ymax>
+    </bndbox>
+</object><object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>0</xmin>
+        <ymin>697.5806451612904</ymin>
+        <xmax>278.2258064516129</xmax>
+        <ymax>1544.3548387096776</ymax>
+    </bndbox>
+</object>
+</annotation>

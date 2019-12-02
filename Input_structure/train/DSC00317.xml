@@ -1,0 +1,70 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>DSC00317.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/DSC00317.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4912</width>
+        <height>3264</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2159.210491071429</xmin>
+        <ymin>943.2258064516127</ymin>
+        <xmax>3435.453348214286</xmax>
+        <ymax>2197.935483870967</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1773.2676339285715</xmin>
+        <ymin>1544.2580645161288</ymin>
+        <xmax>2075.881919642857</xmax>
+        <ymax>1825.0322580645159</ymax>
+    </bndbox>
+</object><object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3619.653348214286</xmin>
+        <ymin>1434.5806451612902</ymin>
+        <xmax>3738.0676339285715</xmax>
+        <ymax>1860.1290322580644</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2330.253348214286</xmin>
+        <ymin>789.6774193548387</ymin>
+        <xmax>2536.381919642857</xmax>
+        <ymax>1131.8709677419354</ymax>
+    </bndbox>
+</object><object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3027.5819196428574</xmin>
+        <ymin>776.516129032258</ymin>
+        <xmax>3277.567633928572</xmax>
+        <ymax>1136.258064516129</ymax>
+    </bndbox>
+</object>
+</annotation>

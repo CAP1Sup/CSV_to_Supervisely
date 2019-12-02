@@ -1,0 +1,103 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>IMG_5960.JPG</filename>
+    <path>2018-19-FRC-Vision-Labeling-PascalVOC-export/Annotations/IMG_5960.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>4000</width>
+        <height>3000</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Tape</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3828.150611482459</xmin>
+        <ymin>1961.581149343717</ymin>
+        <xmax>3991.323029312841</xmax>
+        <ymax>2196.319478476019</ymax>
+    </bndbox>
+</object><object>
+    <name>Hatch</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3708.7558673577996</xmin>
+        <ymin>2120.7257379342514</ymin>
+        <xmax>4000</xmax>
+        <ymax>2793.1116302711916</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1730.7859554169504</xmin>
+        <ymin>2200.29814306818</ymin>
+        <xmax>2108.8686465783944</xmax>
+        <ymax>2534.5017569405695</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2073.050267689884</xmin>
+        <ymin>2283.8489911169463</ymin>
+        <xmax>2467.052435463499</xmax>
+        <ymax>2701.6034530381025</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1826.3014846233534</xmin>
+        <ymin>2423.1004784239985</ymin>
+        <xmax>2296.094459582198</xmax>
+        <ymax>2928.3844529860826</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1432.2995385941756</xmin>
+        <ymin>2359.442731658714</ymin>
+        <xmax>1874.0594709709922</xmax>
+        <ymax>2765.26142148071</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1523.8354203919732</xmin>
+        <ymin>2637.945706272818</ymin>
+        <xmax>2057.1310128221503</xmax>
+        <ymax>2992.0424214286895</ymax>
+    </bndbox>
+</object><object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1062.1763639943802</xmin>
+        <ymin>2578.266402422372</ymin>
+        <xmax>1571.5931849951749</xmax>
+        <ymax>2999.999528935689</ymax>
+    </bndbox>
+</object>
+</annotation>
