@@ -7,10 +7,15 @@ import shutil
 
 def main():
     print("")
-    input_path = getInputPath()
+    input_path = getPath("Enter the full path to the directory of your input data: ")
+    output_path = getPath("Enter the full path to the directory of your output data: ")
+    name = "test_export"
 
-def getInputPath():
-    input_path = input("Enter the full path to the directory of your input data: ")
+
+    createFolderStructure(input_path, output_path, name)
+
+def getPath(prompt):
+    input_path = input(prompt)
     
     if os.path.exists(input_path):
         return input_path
@@ -21,7 +26,7 @@ def getInputPath():
 def createFolderStructure(input_path, output_path, project_name):
 
     # Check to see if output directory exists, otherwise error
-    if os.path.exists(output_path)
+    if os.path.exists(output_path):
         os.chdir(output_path)
 
     else:
