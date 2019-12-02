@@ -45,7 +45,21 @@ def createFolderStructure(input_path, output_path, project_name):
     os.mkdir('img')
 
     # Get all the image names in the input images directory
-    input_image_names = [f for f in os.listdir(input_path) if os.path.isfile(os.path.join(input_path, f))]
+    input_train_names = [f for f in os.listdir(input_path + 'train/') if os.path.isfile(os.path.join(input_path + 'train/', f))]
+
+    input_test_names =
+
+    input_image_names = [f for f in os.listdir(input_path + 'test/') if os.path.isfile(os.path.join(input_path + 'test/', f))]
+
+    for entry in input_names:
+        filename, file_extension = os.path.splitext(entry)
+        # TODO: convert the files to the standarized format
+        if file_extension == ".jpeg":
+            input_image_names.append(entry)
+
+        elif file_extension == "jpg":
+            input_image_names.append(entry)
+            
 
     # Copy each image over to the output images folder
     for entry in input_image_names:
