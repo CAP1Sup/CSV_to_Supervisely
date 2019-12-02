@@ -33,8 +33,12 @@ def createFolderStructure(input_path, output_path, project_name):
         AttributeError
     
     # Create the project name folder and move into it
-    os.mkdir(project_name)
-    os.chdir(project_name)
+    try:
+        os.mkdir(project_name)
+        os.chdir(project_name)
+    except:
+        print("Project directory already exists!")
+    
 
     # Create the dataset folder and move into it
     os.mkdir('main_dataset')
@@ -45,13 +49,13 @@ def createFolderStructure(input_path, output_path, project_name):
     os.mkdir('img')
 
     # Get all the image names in the input images directory
-    input_train_names = [f for f in os.listdir(input_path + 'train/') if os.path.isfile(os.path.join(input_path + 'train/', f))]
+    input_train_names = [f for f in os.listdir(input_path + '\\train') if os.path.isfile(os.path.join(input_path + '\\train', f))]
 
-    input_test_names =
+    input_test_names = [f for f in os.listdir(input_path + '\\test') if os.path.isfile(os.path.join(input_path + '\\test', f))]
 
-    input_image_names = [f for f in os.listdir(input_path + 'test/') if os.path.isfile(os.path.join(input_path + 'test/', f))]
+    input_image_names = input_train_names + input_test_names
 
-    for entry in input_names:
+    for entry in input_image_names:
         filename, file_extension = os.path.splitext(entry)
         # TODO: convert the files to the standarized format
         if file_extension == ".jpeg":
@@ -60,9 +64,26 @@ def createFolderStructure(input_path, output_path, project_name):
         elif file_extension == "jpg":
             input_image_names.append(entry)
             
+    notAvaiableCount = 0
 
     # Copy each image over to the output images folder
-    for entry in input_image_names:
-        shutil.copy(entry, output_path + project_name + "main_dataset/img")
+    for entry in input_train_names:
+        filename, file_extension = os.path.splitext(entry)
+        if file_extension == ".jpeg" or file_extension == ".JPG" or file_extension == ".png":
+            shutil.copy(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
+            print("Copied: " + entry)
+        else:
+            notAvaiableCount =+ 1            
+
+    # Copy each image over to the output images folder
+    for entry in input_test_names:
+        filename, file_extension = os.path.splitext(entry)
+        if file_extension == ".jpeg" or file_extension == ".JPG" or file_extension == ".png":
+            shutil.copy(input_path + "\\test\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
+            print("Copied: " + entry)
+        else:
+            notAvaiableCount =+ 1
+
+    # print(str(notAvaiableCount) + " files were skipped")
 
 main()
