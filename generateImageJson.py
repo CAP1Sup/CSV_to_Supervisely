@@ -6,6 +6,7 @@ import os
 
 jsonFileContents = ""
 
+
 def getInfoFromXML(xml_file_contents):
     file_name = getXMLValue(xml_file_contents, "filename")
     width = getXMLValue(xml_file_contents, "width")
@@ -38,8 +39,6 @@ def getInfoFromXML(xml_file_contents):
     
     return object_list
 
-def generateJson(xml_file_contents):
-    pass
 
 def getXMLValue(xml_file_contents, parameter_name, start_index = 0, end_index = -1):
     # If there wasn't an end specified, use the entire length
@@ -52,11 +51,22 @@ def getXMLValue(xml_file_contents, parameter_name, start_index = 0, end_index = 
     else:
         characters = None
     return characters
+
+
+def generateJson(file_name, width, height, names, xmins, ymins, xmaxes, ymaxes):
+    addString('''{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": ''')
+
+
     
 
 def addString(addition):
     global jsonFileContents
     jsonFileContents = jsonFileContents + str(addition)
+
 
 XMLFileConstants = '''<annotation verified="yes">
     <folder>Annotation</folder>
@@ -97,4 +107,9 @@ XMLFileConstants = '''<annotation verified="yes">
 </annotation>
 '''
 
-getInfoFromXML(XMLFileConstants)
+# getInfoFromXML(XMLFileConstants)\
+width = 4912
+height = 3264
+names = ["hatch", "hatch"]
+xmins = [581, 0]
+#generateJson("test.jpeg", width, height, names, xmins, ymins, maxes, ymaxes)

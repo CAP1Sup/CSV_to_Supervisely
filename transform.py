@@ -4,6 +4,8 @@
 
 import os
 import shutil
+import generateImageJson
+import generateMeta
 
 def main():
     print("")
@@ -53,37 +55,72 @@ def createFolderStructure(input_path, output_path, project_name):
 
     input_test_names = [f for f in os.listdir(input_path + '\\test') if os.path.isfile(os.path.join(input_path + '\\test', f))]
 
-    input_image_names = input_train_names + input_test_names
+    input_names = input_train_names + input_test_names
 
-    for entry in input_image_names:
-        filename, file_extension = os.path.splitext(entry)
+    input_image_names = []
+    input_xml_names = []
+
+    for entry in input_names:
+        unused_filename, file_extension = os.path.splitext(entry)
         # TODO: convert the files to the standarized format
         if file_extension == ".jpeg":
             input_image_names.append(entry)
 
         elif file_extension == "jpg":
             input_image_names.append(entry)
+
+        elif file_extension == ".xml":
+            input_xml_names.append(entry)
             
     notAvaiableCount = 0
 
     # Copy each image over to the output images folder
     for entry in input_train_names:
         filename, file_extension = os.path.splitext(entry)
-        if file_extension == ".jpeg" or file_extension == ".JPG" or file_extension == ".png":
+        if file_extension == ".jpeg" or file_extension == ".JPG":
             shutil.copy(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
             print("Copied: " + entry)
+        elif file_extension == ".xml":
+            transferXMLToJson(input_path + "\\train\\" + entry)
         else:
             notAvaiableCount =+ 1            
 
     # Copy each image over to the output images folder
     for entry in input_test_names:
         filename, file_extension = os.path.splitext(entry)
-        if file_extension == ".jpeg" or file_extension == ".JPG" or file_extension == ".png":
+        if file_extension == ".jpeg" or file_extension == ".JPG":
             shutil.copy(input_path + "\\test\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
             print("Copied: " + entry)
         else:
             notAvaiableCount =+ 1
 
     # print(str(notAvaiableCount) + " files were skipped")
+
+    #for 
+    #generateImageJson.getInfoFromXML()
+
+def transferXMLToJson(file_path):
+    xml_file = open(file_path)
+    info = generateImageJson.getInfoFromXML(xml_file.read())
+    object_count = (len(info) - 3) % 5
+    file_name = info[0]
+    width = info[1]
+    height = info[2]
+
+    names = []
+    xmins = []
+    ymins = []
+    xmaxes = []
+    ymaxes = []
+
+    for object_number in range(0, object_count):
+        names.append(info[1 + (5 * object_number)])
+        xmins.append(info[2 + (5 * object_number)])
+        ymins.append(info[3 + (5 * object_number)])
+        xmaxes.append(info[4 + (5 * object_number)])
+        ymaxes.append(info[5 + (5 * object_number)])
+
+    generateImageJson.generateJson(file_name, width, height, names, xmins, ymins, xmaxes, ymaxes)
+
 
 main()
