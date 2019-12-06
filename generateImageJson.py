@@ -4,7 +4,7 @@
 
 import os
 
-jsonFileContents = ""
+json_file_contents = ""
 
 
 def getInfoFromXML(xml_file_contents):
@@ -54,18 +54,83 @@ def getXMLValue(xml_file_contents, parameter_name, start_index = 0, end_index = 
 
 
 def generateJson(file_name, width, height, names, xmins, ymins, xmaxes, ymaxes):
+    global json_file_contents
+    json_file_contents = ""
+
     addString('''{
   "description": "",
   "tags": [],
   "size": {
     "height": ''')
+    addString(height)
+
+    addString(''',
+    "width": ''')
+
+    addString(width)
+
+    addString('''
+  },
+  "objects": [''')
+
+    for object_ in range(0, len(xmins)):
+        addString('''\n    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "''')
+
+        addString(names[object_])
+
+        addString('''",
+      "points": {
+        "exterior": [
+          [
+            ''')
+
+        addString(xmins[object_])
+
+        addString(''',
+            ''')
+
+        addString(ymins[object_])
+
+        addString('''
+          ],
+          [
+            ''')
+
+        addString(xmaxes[object_])
+
+        addString(''',
+            ''')
+        
+        addString(ymaxes[object_])
+
+        addString('''
+          ]
+        ],
+        "interior": []
+      }
+    }''')
+
+        if (len(xmins) - object_) - 1 > 0:
+            addString(",")
+
+    
+    addString('''
+  ]
+}''')
+
+    return json_file_contents
+    
 
 
     
 
 def addString(addition):
-    global jsonFileContents
-    jsonFileContents = jsonFileContents + str(addition)
+    global json_file_contents
+    json_file_contents = json_file_contents + str(addition)
 
 
 XMLFileConstants = '''<annotation verified="yes">
@@ -110,6 +175,10 @@ XMLFileConstants = '''<annotation verified="yes">
 # getInfoFromXML(XMLFileConstants)\
 width = 4912
 height = 3264
-names = ["hatch", "hatch"]
+names = ["ball", "hatch"]
 xmins = [581, 0]
-#generateJson("test.jpeg", width, height, names, xmins, ymins, maxes, ymaxes)
+ymins = [645, 3264]
+xmaxes = [2058, 810]
+ymaxes = [3258, 1714]
+
+generateJson("test.jpeg", width, height, names, xmins, ymins, xmaxes, ymaxes)

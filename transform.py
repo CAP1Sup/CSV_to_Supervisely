@@ -78,29 +78,33 @@ def createFolderStructure(input_path, output_path, project_name):
     for entry in input_train_names:
         filename, file_extension = os.path.splitext(entry)
         if file_extension == ".jpeg" or file_extension == ".JPG":
-            shutil.copy(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
+            #shutil.copy(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
             print("Copied: " + entry)
         elif file_extension == ".xml":
-            transferXMLToJson(input_path + "\\train\\" + entry)
+            transferXMLToJson(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\ann")
         else:
-            notAvaiableCount =+ 1            
+            notAvaiableCount =+ 1 
+
+    print("Finished train folder")           
 
     # Copy each image over to the output images folder
     for entry in input_test_names:
         filename, file_extension = os.path.splitext(entry)
         if file_extension == ".jpeg" or file_extension == ".JPG":
-            shutil.copy(input_path + "\\test\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
+            #shutil.copy(input_path + "\\test\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
             print("Copied: " + entry)
         else:
             notAvaiableCount =+ 1
+    
+    print("Finished test folder")
 
     # print(str(notAvaiableCount) + " files were skipped")
 
     #for 
     #generateImageJson.getInfoFromXML()
 
-def transferXMLToJson(file_path):
-    xml_file = open(file_path)
+def transferXMLToJson(xml_file_path, json_dir_path):
+    xml_file = open(xml_file_path, "r")
     info = generateImageJson.getInfoFromXML(xml_file.read())
     object_count = (len(info) - 3) % 5
     file_name = info[0]
@@ -113,14 +117,18 @@ def transferXMLToJson(file_path):
     xmaxes = []
     ymaxes = []
 
-    for object_number in range(0, object_count):
-        names.append(info[1 + (5 * object_number)])
-        xmins.append(info[2 + (5 * object_number)])
-        ymins.append(info[3 + (5 * object_number)])
-        xmaxes.append(info[4 + (5 * object_number)])
-        ymaxes.append(info[5 + (5 * object_number)])
+    for object_number in range(0, object_count - 1):
+        names.append(info[1 + (5 * object_number) + 3])
+        xmins.append(info[2 + (5 * object_number) + 3])
+        ymins.append(info[3 + (5 * object_number) + 3])
+        xmaxes.append(info[4 + (5 * object_number) + 3])
+        ymaxes.append(info[5 + (5 * object_number) + 3])
 
-    generateImageJson.generateJson(file_name, width, height, names, xmins, ymins, xmaxes, ymaxes)
+    json_data = generateImageJson.generateJson(file_name, width, height, names, xmins, ymins, xmaxes, ymaxes)
+
+    json_file = open(json_dir_path + file_name, "w+")
+
+    json_file.write(json_data)
 
 
 main()
