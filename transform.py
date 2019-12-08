@@ -5,12 +5,12 @@
 import os
 import shutil
 import generateImageJson
-import generateMeta
+# import generateMeta
 
 def main():
     print("")
-    input_path = getPath("Enter the full path to the directory of your input data: ")
-    output_path = getPath("Enter the full path to the directory of your output data: ")
+    input_path = "/Users/200239/Desktop/Programs/Github/SuperviselyTransformation/Input_structure" #input("Enter the full path to the directory of your input data: ")
+    output_path = "/Users/200239/Desktop/Programs/Github/SuperviselyTransformation" #input("Enter the full path to the directory of your output data: ")
     name = "test_export"
 
 
@@ -40,6 +40,7 @@ def createFolderStructure(input_path, output_path, project_name):
         os.chdir(project_name)
     except:
         print("Project directory already exists!")
+        AttributeError        
     
 
     # Create the dataset folder and move into it
@@ -51,9 +52,9 @@ def createFolderStructure(input_path, output_path, project_name):
     os.mkdir('img')
 
     # Get all the image names in the input images directory
-    input_train_names = [f for f in os.listdir(input_path + '\\train') if os.path.isfile(os.path.join(input_path + '\\train', f))]
+    input_train_names = [f for f in os.listdir(input_path + '/train/') if os.path.isfile(os.path.join(input_path + '/train/', f))]
 
-    input_test_names = [f for f in os.listdir(input_path + '\\test') if os.path.isfile(os.path.join(input_path + '\\test', f))]
+    input_test_names = [f for f in os.listdir(input_path + '/test/') if os.path.isfile(os.path.join(input_path + '/test/', f))]
 
     input_names = input_train_names + input_test_names
 
@@ -78,10 +79,12 @@ def createFolderStructure(input_path, output_path, project_name):
     for entry in input_train_names:
         filename, file_extension = os.path.splitext(entry)
         if file_extension == ".jpeg" or file_extension == ".JPG":
-            #shutil.copy(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
+            shutil.copy(input_path + "/train/" + entry, output_path + "/" + project_name + "/main_dataset/img")
             print("Copied: " + entry)
+
         elif file_extension == ".xml":
-            transferXMLToJson(input_path + "\\train\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\ann")
+            transferXMLToJson(input_path + "/train/" + entry, output_path + "/" + project_name + "/main_dataset/ann/")
+
         else:
             notAvaiableCount =+ 1 
 
@@ -91,11 +94,15 @@ def createFolderStructure(input_path, output_path, project_name):
     for entry in input_test_names:
         filename, file_extension = os.path.splitext(entry)
         if file_extension == ".jpeg" or file_extension == ".JPG":
-            #shutil.copy(input_path + "\\test\\" + entry, output_path + "\\" + project_name + "\\main_dataset\\img")
+            shutil.copy(input_path + "/test/" + entry, output_path + "/" + project_name + "/main_dataset/img")
             print("Copied: " + entry)
+
+        elif file_extension == ".xml":
+            transferXMLToJson(input_path + "/test/" + entry, output_path + "/" + project_name + "/main_dataset/ann/")
+
         else:
             notAvaiableCount =+ 1
-    
+
     print("Finished test folder")
 
     # print(str(notAvaiableCount) + " files were skipped")
@@ -106,7 +113,7 @@ def createFolderStructure(input_path, output_path, project_name):
 def transferXMLToJson(xml_file_path, json_dir_path):
     xml_file = open(xml_file_path, "r")
     info = generateImageJson.getInfoFromXML(xml_file.read())
-    object_count = (len(info) - 3) % 5
+    object_count = (len(info) - 3) / 5
     file_name = info[0]
     width = info[1]
     height = info[2]
@@ -117,16 +124,17 @@ def transferXMLToJson(xml_file_path, json_dir_path):
     xmaxes = []
     ymaxes = []
 
-    for object_number in range(0, object_count - 1):
-        names.append(info[1 + (5 * object_number) + 3])
-        xmins.append(info[2 + (5 * object_number) + 3])
-        ymins.append(info[3 + (5 * object_number) + 3])
-        xmaxes.append(info[4 + (5 * object_number) + 3])
-        ymaxes.append(info[5 + (5 * object_number) + 3])
+    for object_number in range(0, int(object_count)):
+        names.append(info[0 + (5 * object_number) + 3])
+        xmins.append(info[1 + (5 * object_number) + 3])
+        ymins.append(info[2 + (5 * object_number) + 3])
+        xmaxes.append(info[3 + (5 * object_number) + 3])
+        ymaxes.append(info[4 + (5 * object_number) + 3])
 
     json_data = generateImageJson.generateJson(file_name, width, height, names, xmins, ymins, xmaxes, ymaxes)
 
-    json_file = open(json_dir_path + file_name, "w+")
+    json_file = open(json_dir_path + file_name + ".json", "w+")
+    print(json_dir_path + file_name)
 
     json_file.write(json_data)
 

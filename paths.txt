@@ -1,2 +1,9 @@
+Windows 10
 C:\Users\xmanp\Desktop\alwaysai-starter-apps\alwaysai-starter-apps\SuperviselyTransformation\Input_structure
 C:\Users\xmanp\Desktop\alwaysai-starter-apps\alwaysai-starter-apps\SuperviselyTransformation
+
+Mac 
+\Users\200239\Desktop\Programs\Github\SuperviselyTransformation\Input_structure
+\Users\200239\Desktop\Programs\Github\SuperviselyTransformation
+/Users/200239/Desktop/Programs/Github/SuperviselyTransformation/Input_structure
+/Users/200239/Desktop/Programs/Github/SuperviselyTransformation
