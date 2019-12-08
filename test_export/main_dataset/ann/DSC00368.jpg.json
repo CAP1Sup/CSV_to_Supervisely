@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 3264,
+    "width": 4912
+  },
+  "objects": [
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Tape",
+      "points": {
+        "exterior": [
+          [
+            1602.2247767857145,
+            1224
+          ],
+          [
+            1777.6533482142859,
+            1526.7096774193549
+          ]
+        ],
+        "interior": []
+      }
+    }
+  ]
+}

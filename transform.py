@@ -78,7 +78,7 @@ def createFolderStructure(input_path, output_path, project_name):
     # Copy each image over to the output images folder
     for entry in input_train_names:
         filename, file_extension = os.path.splitext(entry)
-        if file_extension == ".jpeg" or file_extension == ".JPG":
+        if file_extension == ".jpg":
             shutil.copy(input_path + "/train/" + entry, output_path + "/" + project_name + "/main_dataset/img")
             print("Copied: " + entry)
 
@@ -93,7 +93,7 @@ def createFolderStructure(input_path, output_path, project_name):
     # Copy each image over to the output images folder
     for entry in input_test_names:
         filename, file_extension = os.path.splitext(entry)
-        if file_extension == ".jpeg" or file_extension == ".JPG":
+        if file_extension == ".jpg":
             shutil.copy(input_path + "/test/" + entry, output_path + "/" + project_name + "/main_dataset/img")
             print("Copied: " + entry)
 

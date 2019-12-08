@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 720,
+    "width": 1280
+  },
+  "objects": [
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Hatch",
+      "points": {
+        "exterior": [
+          [
+            594.367201426025,
+            137.56735340729003
+          ],
+          [
+            828.2352941176471,
+            568.8827258320127
+          ]
+        ],
+        "interior": []
+      }
+    }
+  ]
+}

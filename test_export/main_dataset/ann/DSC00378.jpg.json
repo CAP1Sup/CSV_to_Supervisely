@@ -1,0 +1,48 @@
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 3264,
+    "width": 4912
+  },
+  "objects": [
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Ball",
+      "points": {
+        "exterior": [
+          [
+            1273.296205357143,
+            1680.2580645161288
+          ],
+          [
+            1729.4104910714286,
+            2061.9354838709673
+          ]
+        ],
+        "interior": []
+      }
+    },
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Tape",
+      "points": {
+        "exterior": [
+          [
+            3224.9390625,
+            1640.774193548387
+          ],
+          [
+            3448.6104910714284,
+            1768
+          ]
+        ],
+        "interior": []
+      }
+    }
+  ]
+}

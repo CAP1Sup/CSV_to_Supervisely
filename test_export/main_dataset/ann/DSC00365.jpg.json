@@ -1,0 +1,48 @@
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 3264,
+    "width": 4912
+  },
+  "objects": [
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Ball",
+      "points": {
+        "exterior": [
+          [
+            32.1390625,
+            750.1935483870967
+          ],
+          [
+            273.35334821428575,
+            965.1612903225805
+          ]
+        ],
+        "interior": []
+      }
+    },
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Hatch",
+      "points": {
+        "exterior": [
+          [
+            0,
+            697.5483870967741
+          ],
+          [
+            330.3676339285715,
+            1017.8064516129032
+          ]
+        ],
+        "interior": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 3000,
+    "width": 4000
+  },
+  "objects": [
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Tape",
+      "points": {
+        "exterior": [
+          [
+            3828.150611482459,
+            1961.581149343717
+          ],
+          [
+            3991.323029312841,
+            2196.319478476019
+          ]
+        ],
+        "interior": []
+      }
+    },
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Hatch",
+      "points": {
+        "exterior": [
+          [
+            3708.7558673577996,
+            2120.7257379342514
+          ],
+          [
+            4000,
+            2793.1116302711916
+          ]
+        ],
+        "interior": []
+      }
+    }
+  ]
+}

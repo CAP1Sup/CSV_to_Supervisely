@@ -10,6 +10,10 @@ json_file_contents = ""
 
 def getInfoFromXML(xml_file_contents):
     file_name = getXMLValue(xml_file_contents, "filename")
+    end = len(file_name) - 4
+
+    file_name = file_name[0:end] + '.jpg'
+    
     width = getXMLValue(xml_file_contents, "width")
     height = getXMLValue(xml_file_contents, "height")
 

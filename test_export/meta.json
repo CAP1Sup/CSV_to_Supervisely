@@ -1,0 +1,20 @@
+{
+  "classes": [
+    {
+      "title": "Hatch",
+      "shape": "rectangle",
+      "color": "#7ED321"
+    },
+    {
+      "title": "Ball",
+      "shape": "rectangle",
+      "color": "#d32121"
+    },
+    {
+      "title": "Tape",
+      "shape": "rectangle",
+      "color": "#ca21d3"
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 3264,
+    "width": 4912
+  },
+  "objects": [
+    {
+      "description": "",
+      "bitmap": null,
+      "tags": [],
+      "classTitle": "Ball",
+      "points": {
+        "exterior": [
+          [
+            3654.7390625000003,
+            1193.2903225806451
+          ],
+          [
+            4176.6390625,
+            1649.5483870967741
+          ]
+        ],
+        "interior": []
+      }
+    }
+  ]
+}
